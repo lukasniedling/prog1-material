@@ -12,7 +12,9 @@ func GuessingGame() {
 		if NumberGood.NumberGood(guess) {
 			fmt.Println("Richtig geraten! :)")
 			return
+		} else {
+			fmt.Printf("Deine Zahl - %d - war nicht korrekt :(\n", guess)
 		}
 	}
-	fmt.Println("Leider falsch! :(")
+	
 }
