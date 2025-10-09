@@ -1,7 +1,10 @@
 package guessingGame
-import "fmt"
-import "prog1-material/myspace/Minispiel/NumberGood"
-import "prog1-material/myspace/Minispiel/ReadNumber"
+
+import (
+	"fmt"
+	"prog1-material/myspace/2025_10_07/Minispiel/NumberGood"
+	"prog1-material/myspace/2025_10_07/Minispiel/ReadNumber"
+)
 
 func GuessingGame() {
 	for n := 0; n < 3; n++ {
@@ -13,4 +16,3 @@ func GuessingGame() {
 	}
 	fmt.Println("Leider falsch! :(")
 }
-

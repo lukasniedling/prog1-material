@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"prog1-material/myspace/greet"
+	"prog1-material/myspace/2025_10_07/greet"
 )
 
 func main() {
