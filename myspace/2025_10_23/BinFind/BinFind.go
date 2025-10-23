@@ -1,6 +1,6 @@
 package searching
 
-func binFind( l[]int, x int) int {
+func BinFind( l[]int, x int) int {
 	mitte := len(l) / 2
 	if len(l) == 0 {
 		return -1
@@ -9,8 +9,8 @@ func binFind( l[]int, x int) int {
 		return mitte
 	}
 	if x < l[mitte] {
-		return binFind( l[:mitte], x)
+		return BinFind( l[:mitte], x)
 	}
-	return binFind( l[mitte+1:], x) + mitte + 1	
+	return BinFind( l[mitte+1:], x) + mitte + 1
 
 }
