@@ -10,3 +10,21 @@ func PrintBoard(board [5][5]string) {
 		fmt.Println()
 	}
 }
+
+func ExamplePrintBoard() {
+	board := [5][5]string{
+		{" ", "|", " ", "|", " "},
+		{"-", "|", "-", "|", "-"},
+		{" ", "|", " ", "|", " "},
+		{"-", "|", "-", "|", "-"},
+		{" ", "|", "", "|", " "},
+	}
+
+	PrintBoard(board)
+	// Output:
+	//	               
+	//               
+	//               
+	//               
+	//               
+}
