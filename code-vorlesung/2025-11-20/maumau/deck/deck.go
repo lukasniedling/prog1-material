@@ -51,7 +51,9 @@ func (d *Deck) DrawOut() (card card.Card) {
 	if len(d.Cards) == 0 {
 		
 	}
+	return d.Cards[len(d.Cards)-1]
 
 }
+
 	
 
