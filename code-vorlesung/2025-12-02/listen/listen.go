@@ -5,8 +5,10 @@ package listen
 // Liefert die umgedrehte Liste zurück.
 // Die Funktion muss rekursiv sein.
 func Reverse(list []int) []int {
-	// TODO
-	return []int{}
+	if len(list) == 0 {
+		return []int{}
+	}
+	return append([]int{list[len(list)-1]}, Reverse(list[:len(list)-1])...)
 }
 
 // DuplicateElements erwartet eine Liste und dupliziert
